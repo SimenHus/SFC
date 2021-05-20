@@ -22,7 +22,6 @@ class ImageObject:
         self.img = Image.new('RGB', (width, height + self.frameSize[1]), self.backgroundColor) #Creates a new, expanded image
         self.img.paste(oldImage, (0, 0)) #Pastes the old image at the start of the new image
         self.draw = ImageDraw.Draw(self.img) #Recreates drawing environment
-        self.defineRectangle([width, height + self.frameSize[1], 0, 0])
 
         slowPrint("Step name:\n(S1, S2, M0, M1 etc.)")
         cell = input()
