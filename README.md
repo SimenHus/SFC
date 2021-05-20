@@ -30,8 +30,8 @@ When prompted...
 
 ..add action: Answering yes will prompt you follow-up questions to add spesifics to your action.
 
-  ...action type: Standard action types for a sequential step (in example N, R, L). Answering L or D will   prompt you follow-up questions with time constant and time unit.
-  ...action description: Describe what your action does. Answer may be short or long
-  ...connected cells: Connected timers or counters are represented here. If you are not using any, give a   blank answer (just press enter).
+...action type: Standard action types for a sequential step (in example N, R, L). Answering L or D will   prompt you follow-up questions with time constant and time unit.
+...action description: Describe what your action does. Answer may be short or long
+...connected cells: Connected timers or counters are represented here. If you are not using any, give a   blank answer (just press enter).
 
 ...criteria: The answer will be displayed next to the line at the bottom of the sequential step, as an indication of the steps criteria needed to continue. Answerhas no expected size.
