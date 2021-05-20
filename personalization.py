@@ -1,3 +1,5 @@
+import os
+
 #Color definition
 grey = (128, 128, 128)
 black = (0, 0, 0)
@@ -13,3 +15,15 @@ fileFormat = "png" #Picture file format. PNG recommended
 rect = (200, 200, 0, 0) #(width, height, top left x, top left y)
 frame = (600, 300) #(width, height)
 font = "arial"
+
+
+#Create folder to save pictures
+folderName = "Bilder" #Folder that will be created for image storing
+path = "{}\{}".format(os.getcwd(), folderName) #Variable where the picture will be saved
+try:
+    os.mkdir(path) #Creates folder
+    print("Created folder {} in directory {}".format(folderName, path))
+except:
+    pass #If folder excists, pass
+finally:
+    path+= "\\"
