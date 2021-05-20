@@ -4,7 +4,6 @@ import time
 import sys
 
 class ImageObject:
-    "Ballesekk"
 
     def __init__(self, frame, rect, background, textColor, font):
         self.backgroundColor = background #Saves background color choice
