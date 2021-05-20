@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
-import os
+from personalization import *
 import time
 import sys
 
@@ -130,38 +130,6 @@ def slowPrint(text):
         time.sleep(delay)
         sys.stdout.flush()
 
-#Create folder to save pictures
-folderName = "Bilder" #Folder that will be created for image storing
-path = "{}\{}".format(os.getcwd(), folderName) #Variable where the picture will be saved
-try:
-    os.mkdir(path) #Creates folder
-    slowPrint("Created folder {} in directory {}".format(folderName, path))
-except:
-    pass #If folder excists, pass
-finally:
-    path+= "\\"
-
-#Color definition
-grey = (128, 128, 128)
-black = (0, 0, 0)
-white = (255, 255, 255)
-background = white #Variable to be passed to Image class
-textColor = black #Variable to be passed to Image class
-
-#Define image
-fileName = "SFC" #Picture filename
-fileFormat = "png" #Picture file format. PNG recommended
-
-#Standard values
-rect = (200, 200, 0, 0) #(width, height, top left x, top left y)
-frame = (600, 300) #(width, height)
-font = "arial"
-
-#Input from user
-cell = "M0" #Cell number
-type = "N" #Action type
-action = "Kaste en stein på vinduet" #Action performed in sequenctial step
-criteria = "X0" #Criteria to enter next sequential step
 
 chosenInit = False
 img = ImageObject(frame, rect, background, textColor, font)
