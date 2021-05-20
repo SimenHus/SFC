@@ -12,8 +12,7 @@ fileName = "SFC" #Picture filename
 fileFormat = "png" #Picture file format. PNG recommended
 
 #Standard values
-rect = (200, 200, 0, 0) #(width, height, top left x, top left y)
-frame = (600, 300) #(width, height)
+frame = (1000, 300) #(width, height)
 font = "arial"
 
 
