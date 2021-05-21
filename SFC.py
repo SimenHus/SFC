@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 from personalization import *
+from datetime import datetime
 import time
 import sys
 
@@ -172,9 +173,13 @@ class ImageObject:
         slowPrint("Image opening...")
         self.img.show() #Preview of the image
 
-    def save(self, destination, name, format):
-        self.img.save("{}{}.{}".format(destination, name, format), format) #Save image file
-        slowPrint("Image saved to {}{}.{}".format(destination, name, format))
+    def save(self, destination, format):
+        # datetime object containing current date and time
+        now = datetime.now()
+        # dd/mm/YY H:M:S
+        dt_string = now.strftime("%d_%m_%H%M")
+        self.img.save("{}{}.{}".format(destination, dt_string, format), format) #Save image file
+        slowPrint("Image saved to {}{}.{}".format(destination, dt_string, format))
 
 
 
