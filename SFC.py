@@ -205,7 +205,7 @@ while True:
     userAction = input().lower()
     if userAction == "add sequence": img.addSequence()
     if userAction == "show": img.show()
-    if userAction == "save": img.save(path, fileName, fileFormat)
+    if userAction == "save": img.save(path, fileFormat)
     if userAction == "quit":
         input("Press enter to exit...")
         break
