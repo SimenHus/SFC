@@ -8,7 +8,6 @@ background = white #Variable to be passed to Image class
 textColor = black #Variable to be passed to Image class
 
 #Define image
-fileName = "SFC" #Picture filename
 fileFormat = "png" #Picture file format. PNG recommended
 
 #Standard values
